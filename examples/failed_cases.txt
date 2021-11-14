@@ -1,0 +1,20 @@
+$ ./scripts/build_with_mutant.sh mutants/div.mutant.38.c
+$ python3 ./scripts/run_tests.py -v -e ./build/div tests/tests_4.txt
+Failed on input: 0003
+Program output: 0000
+Expected output: 0001
+$ ./scripts/build_with_mutant.sh mutants/div.mutant.58.c
+$ python3 ./scripts/run_tests.py -v -e ./build/div tests/tests_4.txt
+Failed on input: 0303
+Program output: 01
+Expected output: 0101
+$ ./scripts/build_with_mutant.sh mutants/div.mutant.182.c
+$ python3 ./scripts/run_tests.py -v -e ./build/div tests/tests_4.txt
+Failed on input: 0203
+Program output: 0001
+Expected output: 0000
+$ ./scripts/build_with_mutant.sh mutants/div.mutant.44.c
+$ python3 ./scripts/run_tests.py -v -e ./build/div tests/tests_4.txt
+Failed on input: 0003
+Program output: 0
+Expected output: 0001

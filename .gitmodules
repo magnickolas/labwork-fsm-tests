@@ -1,0 +1,3 @@
+[submodule "third-party/universalmutator"]
+	path = third-party/universalmutator
+	url = https://github.com/agroce/universalmutator

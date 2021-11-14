@@ -1,0 +1,20 @@
+mutants/div.mutant.38.c
+16c16
+< #define OUT_ONE '1'
+---
+> #define OUT_ONE '0'
+mutants/div.mutant.58.c
+22c22
+<     while (s[i] != IN_END) {
+---
+>     if (s[i] != IN_END) {
+mutants/div.mutant.182.c
+43c43
+<                 number_rem = (number_rem * BASE + 2) % MOD;
+---
+>                 /*number_rem = (number_rem * BASE + 2) % MOD;*/
+mutants/div.mutant.44.c
+18c18
+< void emit(size_t* pos, char c) { ++*pos; putchar(c); }
+---
+> void emit(size_t* pos, char c) { --*pos; putchar(c); }

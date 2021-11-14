@@ -1,0 +1,10 @@
+mutants/div.mutant.97.c
+32c32
+<                 emit(&i, OUT_ZERO);
+---
+>                 emit( OUT_ZERO,&i);
+mutants/div.mutant.101.c
+33c33
+<                 number_rem = (number_rem * BASE + 0) % MOD;
+---
+>                 number_rem = (number_rem * BASE / 0) % MOD;

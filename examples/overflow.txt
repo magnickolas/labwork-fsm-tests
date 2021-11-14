@@ -1,0 +1,10 @@
+mutants/div.mutant.104.c
+33c33
+<                 number_rem = (number_rem * BASE + 0) % MOD;
+---
+>                 number_rem = (number_rem - BASE + 0) % MOD;
+mutants/div.mutant.76.c
+26c26
+<         unsigned number_rem = 0;
+---
+>         unsigned number_rem = -1;

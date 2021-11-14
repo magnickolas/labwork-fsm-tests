@@ -1,0 +1,5 @@
+mutants/div.mutant.43.c
+18c18
+< void emit(size_t* pos, char c) { ++*pos; putchar(c); }
+---
+> void emit(size_t* pos, char c) { +-*pos; putchar(c); }
